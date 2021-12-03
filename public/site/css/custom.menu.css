@@ -1,0 +1,334 @@
+.sm-read-simple a .sub-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -17px;
+    left: auto;
+    right: 4px;
+    width: 34px;
+    height: 34px;
+    overflow: hidden;
+    font: bold 16px/34px monospace !important;
+    text-align: center;
+    text-shadow: none;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+/* Switch to desktop layout
+-----------------------------------------------
+    These transform the menu tree from
+    collapsible to desktop (navbar + dropdowns)
+-----------------------------------------------*/
+/* start... (it's not recommended editing these rules) */
+
+.sm {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 99;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.sm,
+.sm ul,
+.sm li {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    direction: ltr;
+    text-align: left;
+}
+.sm-rtl,
+.sm-rtl ul,
+.sm-rtl li {
+    direction: rtl;
+    text-align: right;
+}
+.sm > li > h1,
+.sm > li > h2,
+.sm > li > h3,
+.sm > li > h4,
+.sm > li > h5,
+.sm > li > h6 {
+    margin: 0;
+    padding: 0;
+}
+.sm ul {
+    display: none;
+}
+.sm li,
+.sm a {
+    position: relative;
+}
+.sm a {
+    display: block;
+}
+.sm a.disabled {
+    cursor: default;
+}
+.sm::after {
+    content: "";
+    display: block;
+    height: 0;
+    font: 0px/0 serif;
+    clear: both;
+    overflow: hidden;
+}
+.sm *,
+.sm *::before,
+.sm *::after {
+    box-sizing: inherit;
+}
+
+.sm-read-simple ul {
+    position: absolute;
+    width: 12em;
+}
+
+.sm-read-simple ul li,
+.sm-read-simple.sm-rtl ul li,
+.sm-read-simple.sm-vertical li {
+    float: none;
+}
+
+.sm-read-simple a {
+    white-space: nowrap;
+}
+
+.sm-read-simple ul a,
+.sm-read-simple.sm-vertical a {
+    white-space: normal;
+}
+
+.sm-read-simple .sm-nowrap > li > a,
+.sm-read-simple .sm-nowrap > li > :not(ul) a {
+    white-space: nowrap;
+}
+
+/* ...end */
+.sm-read-simple a,
+.sm-read-simple a:hover,
+.sm-read-simple a:focus,
+.sm-read-simple a:active,
+.sm-read-simple a.highlighted {
+    padding: 15px 0 15px 0;
+    background: #fff;
+    background-image: linear-gradient(to bottom, #fff, #fff);
+    color: #000;
+}
+.sm-read-simple a:hover,
+.sm-read-simple a:focus,
+.sm-read-simple a:active,
+.sm-read-simple a.highlighted {
+    background: #fff;
+    background-image: linear-gradient(to bottom, #fff, #fff);
+    color: #6e2840;
+}
+
+.sm-read-simple a .sub-arrow {
+    top: auto;
+    margin-top: 0;
+    bottom: 2px;
+    left: 50%;
+    margin-left: -5px;
+    right: auto;
+    width: 0;
+    height: 0;
+    border-width: 5px;
+    border-style: solid dashed dashed dashed;
+    border-color: #000 transparent transparent transparent;
+    background: transparent;
+    border-radius: 0;
+}
+
+.sm-read-simple a .sub-arrow::before {
+    display: none;
+}
+
+.sm-read-simple ul {
+    border: 1px solid #a8a8a8;
+    padding: 7px 0;
+    background: #fff;
+    border-radius: 0 0 4px 4px !important;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.sm-read-simple ul ul {
+    border-radius: 4px !important;
+    background: #fff;
+}
+
+.sm-read-simple ul a,
+.sm-read-simple ul a:hover,
+.sm-read-simple ul a:focus,
+.sm-read-simple ul a:active,
+.sm-read-simple ul a.highlighted {
+    border: 0 !important;
+    padding: 9px 23px;
+    background: transparent;
+    color: #6e2840;
+    border-radius: 0 !important;
+}
+
+.sm-read-simple ul a:hover,
+.sm-read-simple ul a:focus,
+.sm-read-simple ul a:active,
+.sm-read-simple ul a.highlighted {
+    background: #6e2840;
+    background-image: linear-gradient(to bottom, #6e2840, #6e2840);
+    color: #fff;
+}
+
+.sm-read-simple ul a.disabled {
+    background: #fff;
+    color: #b3b3b3;
+}
+.sm-read-simple ul a .sub-arrow {
+    top: 50%;
+    margin-top: -5px;
+    bottom: auto;
+    left: auto;
+    margin-left: 0;
+    right: 10px;
+    border-style: dashed dashed dashed solid;
+    border-color: transparent transparent transparent #b3b3b3;
+}
+.sm-read-simple ul li {
+    border: 0;
+}
+.sm-read-simple .scroll-up,
+.sm-read-simple .scroll-down {
+    position: absolute;
+    display: none;
+    visibility: hidden;
+    overflow: hidden;
+    background: #fff;
+    height: 20px;
+}
+.sm-read-simple .scroll-up-arrow,
+.sm-read-simple .scroll-down-arrow {
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    margin-left: -8px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-width: 8px;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent #b3b3b3 transparent;
+}
+.sm-read-simple .scroll-down-arrow {
+    top: 6px;
+    border-style: solid dashed dashed dashed;
+    border-color: #b3b3b3 transparent transparent transparent;
+}
+.sm-read-simple.sm-rtl.sm-vertical a .sub-arrow {
+    right: auto;
+    left: 10px;
+    border-style: dashed solid dashed dashed;
+    border-color: transparent #b3b3b3 transparent transparent;
+}
+.sm-read-simple.sm-rtl > li:first-child > a,
+.sm-read-simple.sm-rtl > li:first-child > :not(ul) a {
+    border-radius: 0 8px 8px 0;
+}
+.sm-read-simple.sm-rtl > li:last-child > a,
+.sm-read-simple.sm-rtl > li:last-child > :not(ul) a {
+    border-radius: 8px 0 0 8px !important;
+}
+.sm-read-simple.sm-rtl > li:first-child {
+    border-left: 1px solid #2b82ac;
+}
+.sm-read-simple.sm-rtl > li:last-child {
+    border-left: 0;
+}
+.sm-read-simple.sm-rtl ul a .sub-arrow {
+    right: auto;
+    left: 10px;
+    border-style: dashed solid dashed dashed;
+    border-color: transparent #6e2840 transparent transparent;
+}
+.sm-read-simple.sm-vertical {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+.sm-read-simple.sm-vertical a {
+    padding: 9px 23px;
+}
+.sm-read-simple.sm-vertical a .sub-arrow {
+    top: 50%;
+    margin-top: -5px;
+    bottom: auto;
+    left: auto;
+    margin-left: 0;
+    right: 10px;
+    border-style: dashed dashed dashed solid;
+    border-color: transparent transparent transparent #b3b3b3;
+}
+.sm-read-simple.sm-vertical > li:first-child > a,
+.sm-read-simple.sm-vertical > li:first-child > :not(ul) a {
+    border-radius: 8px 8px 0 0;
+}
+.sm-read-simple.sm-vertical > li:last-child > a,
+.sm-read-simple.sm-vertical > li:last-child > :not(ul) a {
+    border-radius: 0 0 8px 8px !important;
+}
+.sm-read-simple.sm-vertical > li {
+    border-left: 0 !important;
+}
+.sm-read-simple.sm-vertical ul {
+    border-radius: 4px !important;
+}
+.sm-read-simple.sm-vertical ul a {
+    padding: 9px 23px;
+}
+
+/* Menu Mobile */
+.sm-sub-read-simple a, .sm-sub-read-simple a:hover, .sm-sub-read-simple a:focus, .sm-sub-read-simple a:active {
+    padding: 10px 20px;
+    padding-right: 58px;
+    color: #000;
+    font-size: 1em;
+    border-bottom: 1px solid #000;
+    line-height: 23px;
+    text-decoration: none;
+}
+  
+.sm-sub-read-simple a .sub-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -17px;
+    left: auto;
+    right: 4px;
+    width: 34px;
+    height: 34px;
+    overflow: hidden;
+    font: bold 16px/34px monospace !important;
+    text-align: center;
+    text-shadow: none;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.sm-sub-read-simple a .sub-arrow::before {
+    content: '+';
+}
+.sm-sub-read-simple a.highlighted .sub-arrow::before {
+    content: '-';
+}
+
+.sm-sub-read-simple ul {
+    background: #fff;
+}
+
+.sm-sub-read-simple ul ul {
+    background: rgba(102, 102, 102, 0.1);
+}
+
+.sm-sub-read-simple ul a, .sm-sub-read-simple ul a:hover, .sm-sub-read-simple ul a:focus, .sm-sub-read-simple ul a:active {
+    background: transparent;
+    color: #6e2840;
+    font-size: 16px;
+    text-shadow: none;
+    border-left: 8px solid transparent;
+}
