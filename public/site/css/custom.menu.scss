@@ -112,17 +112,17 @@
 .sm-read-simple a:active,
 .sm-read-simple a.highlighted {
     padding: 15px 0 15px 0;
-    background: #fff;
-    background-image: linear-gradient(to bottom, #fff, #fff);
-    color: #000;
+    background: transparent;
+    // background-image: linear-gradient(to bottom, #fff, #fff);
+    color: #fff;
 }
 .sm-read-simple a:hover,
 .sm-read-simple a:focus,
 .sm-read-simple a:active,
 .sm-read-simple a.highlighted {
-    background: #fff;
-    background-image: linear-gradient(to bottom, #fff, #fff);
-    color: #6e2840;
+    background: transparent;
+    // background-image: linear-gradient(to bottom, #fff, #fff);
+    color: #f3b506;
 }
 
 .sm-read-simple a .sub-arrow {
@@ -166,7 +166,7 @@
     border: 0 !important;
     padding: 9px 23px;
     background: transparent;
-    color: #6e2840;
+    color: #f3b506;
     border-radius: 0 !important;
 }
 
@@ -293,7 +293,7 @@
     line-height: 23px;
     text-decoration: none;
 }
-  
+
 .sm-sub-read-simple a .sub-arrow {
     position: absolute;
     top: 50%;

@@ -8,8 +8,9 @@
         <title>MOBBIN - COMMERCE</title>
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+        {{-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"> --}}
 
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
         {{-- Slick --}}
         <link rel="stylesheet" href="{{asset('plugin/slick-1.8.1/slick.css')}}"/>
         <link rel="stylesheet" href="{{asset('plugin/slick-1.8.1/slick-theme.css')}}"/>
@@ -18,7 +19,7 @@
         <!-- iCheck for checkboxes and radio inputs -->
         <link rel="stylesheet" href="{{asset('plugin/icheck-bootstrap/icheck-bootstrap.min.css')}}">
         <!-- Font Awesome -->
-        <link rel="stylesheet" href="{{asset('plugin/fontawesome-free/css/all.min.css')}}">
+        {{-- <link rel="stylesheet" href="{{asset('plugin/fontawesome-free/css/all.min.css')}}"> --}}
         <!-- Ionicons -->
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <!-- SweetAlert2 -->
@@ -35,7 +36,7 @@
         <!-- Custom css -->
         <link rel="stylesheet" href="{{asset('site/css/custom.min.css')}}">
         <link rel="stylesheet" href="{{asset('site/css/custom.menu.min.css')}}">
-
+        <script src="https://kit.fontawesome.com/0ab2bcde1c.js" crossorigin="anonymous"></script>
         <style>
             select[readonly].select2-hidden-accessible + .select2-container {
                 pointer-events: none;
